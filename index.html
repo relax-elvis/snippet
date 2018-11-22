@@ -1,0 +1,306 @@
+ua.**.wowsale.info
+
+ru.**.wowsale.info
+
+/www/AWEBMASTER/ua.**.wowsale.info
+
+AWEBMASTER/
+
+tppabs="([^"]+)"
+
+    'additional_1'    => '',
+
+<?php
+//*********************** Главная страница лендинга *************************
+session_start();
+$sale = 53; // скидка на товар в процентах;
+$product_id = 463; // код товар из платформы;
+$currency = 'грн'; // валюта;
+$price_new = 349; // полная цена по умолчанию;
+$price = $price_new;
+$discount = $sale;
+$office = '2'; // 2-UK / 4-RU
+$addit = ''; // additional_1
+?>
+
+<?= $price_old?>
+<?= $currency?>.
+<?= $landing_price?>
+<?= $currency?>.
+
+	<?php
+	include '/' . implode('/', array_slice(explode('/', $_SERVER['DOCUMENT_ROOT']), 1, -1)) . '/shop/header.php';
+	$price_old = floor(($landing_price / (100 - $sale)) * 100); // расчет скидки;
+	?>
+
+<form class="orderformcdn" action="zakaz.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя!');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона!');return false}return true;">            
+
+<input type="hidden" name="s1" value="<?= $price_new ?>">
+<input type="hidden" name="s2" value="<?= $product_id ?>">
+<input type="hidden" name="uid" value="<?= $uid ?>">
+<input type="hidden" name="utm_source"
+value="<?= !empty($_GET['utm_source']) ? $_GET['utm_source'] : '' ?>">
+<input type="hidden" name="utm_medium"
+value="<?= !empty($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ?>">
+<input type="hidden" name="utm_term" value="<?= !empty($_GET['utm_term']) ? $_GET['utm_term'] : '' ?>">
+<input type="hidden" name="utm_content"
+value="<?= !empty($_GET['utm_content']) ? $_GET['utm_content'] : '' ?>">
+<input type="hidden" name="utm_campaign"
+value="<?= !empty($_GET['utm_content']) ? $_GET['utm_content'] : '' ?>">
+<input type="hidden" name="server_name" value="<?= $_SERVER['SERVER_NAME'] ?>">
+<input type="hidden" name="php_self" value="<?= $_SERVER['PHP_SELF'] ?>">
+<input type="hidden" name="additional" value="<?= $addit ?>">
+<input type="hidden" name="office" value="<?= $office ?>">
+	
+</form>
+
+<a style="color:inherit;" target="_blank" href="-page=politics.htm" tppabs="http://best-gooods.ru/sq11-dv/?page=politics">Политика конфиденциальности</a>
+<br>
+<a style="color:inherit;" target="_blank" href="-page=agreement.htm" tppabs="http://best-gooods.ru/sq11-dv/?page=agreement">Пользовательское соглашение</a>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<style>
+.youtube .play {
+	background: url(youtube-play-icon.png) no-repeat !important;
+}
+</style>
+$('.pc__order-product_form .dp_thumbnails_list').slick({
+	slidesToShow: 6,
+	slidesToScroll: 1,
+	centerMode: true,
+	arrows: true,
+});
+
+
+
+$search_work = stripslashes(htmlspecialchars($_POST['search_work']));
+$work = stripslashes(htmlspecialchars($_POST['work']));
+$time_work = stripslashes(htmlspecialchars($_POST['time_work']));
+$work_sales = stripslashes(htmlspecialchars($_POST['work_sales']));
+$dop_sales = stripslashes(htmlspecialchars($_POST['dop_sales']));
+$ready_learn = stripslashes(htmlspecialchars($_POST['ready_learn']));
+$place_work = stripslashes(htmlspecialchars($_POST['place_work']));
+$salary = stripslashes(htmlspecialchars($_POST['salary']));
+$date_work = stripslashes(htmlspecialchars($_POST['date_work']));
+
+
+<div class="window window-type-callback">
+   <div class="window-height"></div>
+   <div class="window-data">
+      <span class="window-close"><i class="ion ion-ios-close-empty"></i>x</span>
+      <div class="window-content">
+         <form action="zakaz.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя!');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона!');return false}return true;">
+            <p class="window-title">Заказ обратного звонка</p>
+            <p class="window-description">Укажите ваше имя и контактный телефон. В самое ближайшее время наш оператор вам перезвонит.</p>
+            <div class="window-form-item">
+            	<label>Имя</label>
+            	<input type="text" name="name" required class="window-input">
+            </div>
+            <div class="window-form-item">
+	            <label>Контактный телефон <span class="required">*</span></label>
+	            <input type="tel" name="phone" class="window-input mask-phone" placeholder="+380000000000" required autocomplete="off">
+	            <input type="hidden" name="s1" value="<?= $price_new ?>">
+				<input type="hidden" name="s2" value="<?= $product_id ?>">
+				<input type="hidden" name="uid" value="<?= $uid ?>">
+				<input type="hidden" name="utm_source"
+					   value="<?= !empty($_GET['utm_source']) ? $_GET['utm_source'] : '' ?>">
+				<input type="hidden" name="utm_medium"
+					   value="<?= !empty($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ?>">
+				<input type="hidden" name="utm_term" value="<?= !empty($_GET['utm_term']) ? $_GET['utm_term'] : '' ?>">
+				<input type="hidden" name="utm_content"
+					   value="<?= !empty($_GET['utm_content']) ? $_GET['utm_content'] : '' ?>">
+				<input type="hidden" name="utm_campaign"
+					   value="<?= !empty($_GET['utm_content']) ? $_GET['utm_content'] : '' ?>">
+				<input type="hidden" name="server_name" value="<?= $_SERVER['SERVER_NAME'] ?>">
+				<input type="hidden" name="php_self" value="<?= $_SERVER['PHP_SELF'] ?>">
+            </div>
+            <div class="window-form-item"><button type="submit">Отправить заявку</button></div>
+            
+            <div class="status"></div>
+         </form>
+      </div>
+   </div>
+   <div class="window-fake-shade window-close"></div>
+</div>
+<div class="window-shade"></div>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<script>
+   'use strict'
+   $(document).ready(function() {
+      $(".cart-add").on("click", function(e){
+         e.preventDefault();
+         $(".window").fadeIn(200);
+         $(".window-shade").fadeIn(200);
+      });
+      $(".window-shade, .window-close").on("click", function(){
+         $(".window").fadeOut(200);
+         $(".window-shade").fadeOut(200);
+      });
+   });
+</script>
+
+
+/*Всплывающие окна*/
+/* line 1102, _styles.scss */
+.window {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap;
+  overflow: auto; }
+
+/* line 1103, _styles.scss */
+.window-height {
+  display: inline-block;
+  width: 0px;
+  height: 100%;
+  vertical-align: middle; }
+
+/* line 1104, _styles.scss */
+.window-shade {
+  position: fixed;
+  display: none;
+  z-index: 10;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+/* line 1105, _styles.scss */
+.window-fake-shade {
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%; }
+
+/* line 1107, _styles.scss */
+.window-data {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  text-align: left;
+  background: #fff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity 0.2s, transform 0.2s; }
+
+/* line 1108, _styles.scss */
+.window-data .window-close {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: 0px;
+  color: #999;
+  font-size: 34px;
+  width: 34px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s; }
+
+/* line 1109, _styles.scss */
+.window-data .window-close:hover {
+  color: #222; }
+
+/* line 1110, _styles.scss */
+.window-tohide .window-data {
+  transform: scale(0.7);
+  opacity: 0; }
+
+/* line 1112, _styles.scss */
+.window-content {
+  width: 440px;
+  max-width: 100%;
+  padding: 20px; }
+
+/* line 1113, _styles.scss */
+.window-content .window-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #222;
+  margin: 0px 0px 10px; }
+
+/* line 1114, _styles.scss */
+.window-content .window-subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  color: #222;
+  margin: 0px 0px 10px;
+  font-weight: 700; }
+
+/* line 1115, _styles.scss */
+.window-content .window-description {
+  margin: 10px 0px; }
+
+/* line 1117, _styles.scss */
+.window-content .window-form-item {
+	width: 70%;
+  margin: 10px auto; }
+.window-content .window-form-item input {
+	padding: 5px 12px;
+    width: 70%;
+}
+.window-content .window-form-item button {
+	border: 0;
+	background: #007BE1;
+	width: 79%;
+	padding: 10px;
+	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/* line 1118, _styles.scss */
+.window-content .window-form-item label {
+  display: block;
+  margin: 0px 0px 2px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #222; }
+
+/* line 1120, _styles.scss */
+.status {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle; }
+
+/* line 1121, _styles.scss */
+.status i {
+  margin-right: 5px; }
+
+/* line 1122, _styles.scss */
+.status-block {
+  display: block;
+  margin: 0px; }
+
+/* line 1123, _styles.scss */
+.status-block span {
+  display: inline-block;
+  margin: 10px 0px 0px; }
+
+/* line 1124, _styles.scss */
+.text-red {
+  color: #f30; }
+
+/* line 1125, _styles.scss */
+.text-grey {
+  color: #999; }
+
+/* line 1126, _styles.scss */
+.text-green {
+  color: #65bc54; }
+
+/*---*/
